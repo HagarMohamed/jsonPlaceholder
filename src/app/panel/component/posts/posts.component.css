@@ -1,0 +1,15 @@
+
+.container{
+    width: 100%;
+}
+.card{
+    width: 600px;
+    border: 2px solid rgba(238, 238, 238, 0.507);
+    border-radius: 10px;
+    background-color: antiquewhite;
+    margin: 10px auto;
+    padding: 20px;
+}
+p{
+    text-align: left;
+}

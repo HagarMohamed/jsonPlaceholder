@@ -1,0 +1,25 @@
+<h2>Create Post</h2>
+<form #f="ngForm" (ngSubmit)="createPost(title, body)">
+    <div class="container form-group">
+        <label>Title</label>
+        <input (change) = "print(title)" placeholder="title" name="title" type="text" 
+        class="form-control" ngModel  #title = "ngModel" required minlength="10" />
+        <div *ngIf="title.touched && title.invalid" class="alert alert-danger">
+            <div *ngIf="title.errors?.['required']">Please enter your Title</div> 
+            <div *ngIf="title.errors?.['minlength']">Min length is {{title.errors?.['minlength'].requiredLength}}
+                and you enter  {{title.errors?.['minlength'].actualLength}}
+            </div>
+        </div>
+        <label>Body</label>
+        <input placeholder="body content" class="form-control" name="body" type="text" 
+        ngModel #body = "ngModel" required minlength="50"/>
+        <div *ngIf="body.touched && body.invalid" class="alert alert-danger">
+            <div *ngIf="body.errors?.['required']"> Please enter your body Content</div>
+            <div *ngIf="body.errors?.['minlength']">Min length is 50</div>
+        </div>
+    
+    <button class="btn btn-success" type="submit "
+    [disabled]="f.invalid">Create</button>
+    </div>
+</form>
+

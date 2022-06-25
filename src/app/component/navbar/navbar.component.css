@@ -1,0 +1,21 @@
+
+#logout{
+    display: block;
+    float: right;
+    margin: 8px auto;
+}
+.login{
+
+    /* border: 2px solid #04AA6D; */
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 20px;
+    color: #000;
+}
+.home{
+    margin-left: 25px;
+}
+

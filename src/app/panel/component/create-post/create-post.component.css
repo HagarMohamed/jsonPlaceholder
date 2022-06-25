@@ -1,0 +1,29 @@
+h2{
+    text-align: center;
+    color: green;
+}
+.container{
+    width: 900px;
+    height: 500px;
+    padding: 20px;
+    margin: 0 auto;
+    background-color: #eee;
+}
+
+input{
+    margin: 10px auto;
+    width: 500px;
+}
+.alert{
+    margin: 10px auto;
+    width: 500px;
+}
+button{
+    width: 150px;
+    margin: 0 auto;
+    display: block;
+    
+}
+.form-control.ng-invalid.ng-dirty.ng-touched{
+    border: 2px solid #f00;
+}

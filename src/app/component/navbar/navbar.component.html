@@ -1,0 +1,18 @@
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <ng-template #notLogin>
+            <div>
+                <a class="login" routerLink="/login">You Are Not Login</a>
+            </div>
+        </ng-template>
+        <a *ngIf="services.user else notLogin"  class="navbar-brand" href="#">
+            {{services.user.displayName}}
+        </a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active home"><a href="#">Home</a></li>
+      </ul>
+      <button *ngIf="services.user" id="logout" class="btn btn-primary" (click)="logout()">LogOut</button>
+    </div>
+  </nav>
