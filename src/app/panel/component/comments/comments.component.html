@@ -1,11 +1,14 @@
-<div class="container">
-    <div class="card" *ngFor="let comment of comments">
-        <h3>
-            {{comment.name}}
-        </h3>
-        <p>
-            {{comment.body}}
-        </p>
-    </div>
-</div>
 
+
+<div class="card">
+    <div class="card-header">
+      <h1 class="postcard__title blue">Comments</h1>
+    </div>
+    <div class="card-body" *ngFor="let comment of comments">
+      <blockquote class="blockquote mb-0">
+        <h3>{{comment.name}}</h3>
+        <p>{{comment.body}}</p>
+        
+      </blockquote>
+    </div>
+  </div>

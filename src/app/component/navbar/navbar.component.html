@@ -1,9 +1,9 @@
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-light shadow-5-strong">
     <div class="container-fluid">
       <div class="navbar-header">
         <ng-template #notLogin>
             <div>
-                <a class="login" routerLink="/login">You Are Not Login</a>
+                <a class="login" routerLink="/login">Sign In</a>
             </div>
         </ng-template>
         <a *ngIf="services.user else notLogin"  class="navbar-brand" href="#">

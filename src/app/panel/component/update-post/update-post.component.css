@@ -1,0 +1,15 @@
+
+.container_form{
+    background-color: #eee;
+    margin: 40px auto;
+    width: 100%;
+    padding: 80px;
+    border-radius: 20px;
+}
+
+.btn{
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+}

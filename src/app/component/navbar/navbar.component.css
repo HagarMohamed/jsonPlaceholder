@@ -7,15 +7,19 @@
 .login{
 
     /* border: 2px solid #04AA6D; */
-    padding: 10px 20px;
+    padding: 15px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 20px;
     margin-left: 20px;
-    color: #000;
+    font-weight: bold;
+    
 }
 .home{
     margin-left: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    
 }
 

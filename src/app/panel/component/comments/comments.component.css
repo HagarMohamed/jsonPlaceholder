@@ -1,0 +1,31 @@
+/* .card{
+    width: 80%;
+    border: 2px solid rgba(238, 238, 238, 0.507);
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 20px;
+} */
+
+.postcard__title{
+    background-color: lightblue;
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+}
+.card-body{
+    width: 80%;
+    border: 2px solid rgba(238, 238, 238, 0.507);
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 20px;
+}
+.card-body:hover{
+    box-shadow: 8px 8px 8px #206ea6;
+    transform:scale(1.1);
+    transition: transform 0.2s ease;
+}
+
+blockquote {
+    border-left: 5px solid #206ea6 !important;
+}

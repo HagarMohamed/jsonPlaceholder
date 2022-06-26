@@ -1,8 +1,27 @@
-<form #f = "ngForm">
+<div class="container_form">
+    <div class="row">
+
+        <div class="col-md-12">
+            <form #f = "ngForm">
     
-    <input class="form-control" name="title"  [value]="post.title" type="text"  ngModel #title="ngModel" />
     
-    <input type="text" name="body"  [value]="post.body" class="form-control"  ngModel #body="ngModel" />
-    
-    <button class="btn btn-primary"  type="submit" (click)="updatePost(title, body)">Update</button>
-</form>
+                <div class="form-outline">
+                    <label class="form-label">Title</label>
+                    <input class="form-control" name="title"  [value]="post.title" type="text"  ngModel #title="ngModel" />
+                   
+                  </div>
+            
+                  <br/>
+                  <div class="form-outline">
+                    <label class="form-label">Title body</label>
+                    <input type="text" name="body"  [value]="post.body" class="form-control"  ngModel #body="ngModel"/>
+                    
+                  </div>
+                
+                <br/>
+                <button class="btn btn-primary"  type="submit" (click)="updatePost(title, body)">Update Post</button>
+            </form>
+            
+        </div>
+    </div>
+</div>
