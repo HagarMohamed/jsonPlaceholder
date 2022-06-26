@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from 'src/app/services/auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -8,7 +9,7 @@ import { AuthService } from 'src/app/services/auth.service';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor(public services: AuthService) {
+  constructor(public services: AuthService, private router: Router) {
     
    }
 
@@ -18,6 +19,8 @@ export class NavbarComponent implements OnInit {
   logout(){
 
     this.services.logout();
+    this.router.navigateByUrl("/login");
+
 
   }
 

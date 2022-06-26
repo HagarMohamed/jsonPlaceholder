@@ -1,3 +1,4 @@
+<h2>Update Post</h2>
 <div class="container_form">
     <div class="row">
 
@@ -14,8 +15,8 @@
                   <br/>
                   <div class="form-outline">
                     <label class="form-label">Title body</label>
-                    <input type="text" name="body"  [value]="post.body" class="form-control"  ngModel #body="ngModel"/>
-                    
+                    <textarea type="text" name="body"  [value]="post.body" class="form-control"  ngModel #body="ngModel" rows="3">
+                    </textarea>
                   </div>
                 
                 <br/>
