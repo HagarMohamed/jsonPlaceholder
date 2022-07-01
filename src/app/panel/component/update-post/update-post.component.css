@@ -1,4 +1,7 @@
-
+h2{
+    text-align: center;
+    color: blue;
+}
 .container_form{
     background-color: #eee;
     margin: 40px auto;

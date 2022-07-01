@@ -16,7 +16,7 @@ export class AppComponent{
 
     this.authService.user$.subscribe(u =>{
       if(u){
-        let returnUrl = this.route.snapshot.queryParamMap.get('returnUrl') || "";
+        let returnUrl = this.route.snapshot.queryParamMap.get('returnUrl') || "/";
         this.router.navigateByUrl(returnUrl);
       }
     })
